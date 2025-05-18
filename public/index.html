@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invoicer App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Список счетов</h1>
+
+    <form id="invoiceForm">
+      <input type="hidden" id="invoiceId" />
+      <input type="text" id="client" placeholder="Клиент" required />
+      <input type="number" id="amount" placeholder="Сумма" required />
+      <input type="text" id="description" placeholder="Описание" />
+      <input type="date" id="paymentDate" placeholder="Дата оплаты" />
+      <button type="submit">Сохранить</button>
+    </form>
+
+    <ul id="invoiceList"></ul>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
